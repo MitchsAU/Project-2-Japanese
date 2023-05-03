@@ -12,4 +12,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
     });
   });
+
+//If i did not have this smooth scrolling anchor links here, the "menu" and "Reservation" buttons would simply just cut straight to that part of the page. This makes the experience seem nicer for the user
   

@@ -1,4 +1,4 @@
-.header { /*Styling the basics for the header, this is positioning the logo to the left and the text to the right with the grid system as 1fr and 3fr*/
+.header { /*Styling the basics for the header, this is positioning the text to the left and the text to the right with the grid system as 1fr and 3fr*/
     font-family: 'Forzan', sans-serif;
     max-width: 100vw;
     height: 5rem;
@@ -10,7 +10,8 @@
     grid-template-rows: 100%;
     border-bottom: 1px solid white;
 }
-.brand{ /*The brand is the canberra modern logo, this is making it so the logo in centered within its grid template*/
+
+.brand{ /*The brand is the Kinoko text, this is making it so the logo in centered within its grid template*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,24 +29,17 @@
   color: white;
 }
 
-.first a{ /*This is styling the header text*/
+.first a{ /*This is styling the navigation/header text*/
     color: white;
     text-decoration: none;
     margin: 10px;
     font-size: 1.1rem;
-    /* font-weight: 600; */
     transition: 0.1s;
     margin: 0 40px 0 40px;
 }
 
-.first a:hover{ /*When hovering it changed to one of the CM logo colours*/
+.first a:hover{ /*When hovering it changes to a differnt colour*/
     color: salmon;
-}
-
-#underline{ /*This is setting the underline on the page that your are on. E.g. On Events page it will be underlined in the header*/
-    text-decoration:underline;
-    text-decoration-thickness: 2.5px;
-    text-underline-offset: 6px;
 }
 
 /* Global Styles */
@@ -57,12 +51,7 @@ body {
     padding: 0;
   }
   
-  /* Header Styles */
-  /* header {
-    padding: 20px;
-  } */
-  
-  .hero {
+  .hero { /* Setting the grid layout for the hero content*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-family: 'Forzan', sans-serif;
@@ -70,26 +59,28 @@ body {
     align-items: center;
   }
   
-  .hero h1 {
+  .hero h1 { /*Styling Kinoko text*/
     font-size: 48px;
     text-decoration: underline 2px;
     text-underline-offset: 20px;
     margin-left: 100px;
   }
 
-  .hero p {
+  .hero p { /*Styling bar & restaurant text*/
     margin-top: 30px;
     letter-spacing: 4.5px;
     margin-left: 100px;
   }
   
-  .hero img {
+  .hero img { /*setting the max width for the image */
     max-width: 100%;
     height: auto;
     z-index: -2;
   }
 
-  .about{
+  /*ABOUT*/
+
+  .about{ /*Setting up the about section*/
     display: grid;
     grid-template-columns: 1fr;
     font-family: 'Myna', sans-serif;
@@ -97,11 +88,11 @@ body {
     align-items: center;
   }
 
-  .about h2{
+  .about h2{ /*Setting the font size for the about title*/
     font-size: 30px;
   }
 
-  .about p{
+  .about p{ /*Styling the about paragraph for better readability*/
     margin: 20px 20% 30px 20%;
     line-height: 25px;
     text-align: justify;
@@ -109,7 +100,8 @@ body {
   }
 
   /* Variations */
-  .container{
+
+  .container{ /*This is styling the preview on the webite of the four different dishes*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
@@ -118,30 +110,27 @@ body {
     grid-gap: 1em;
   }
 
-  .container img{
+  .container img{ /*Setting the images percetnages and transition time when hovering*/
     width: 100%;
     height: 100%;
     transition: 0.3s;
   }
 
-  .container img:hover{
+  .container img:hover{ /*When the user hovers over the image is gets samller by 10%*/
     height: 90%;
     justify-items: center;
     align-items: center;
     padding-top: 10%;
   }
-  
-  .overlay h2{
-    text-align: center;
-  }
 
   /* Menu Styles */
-  .menu {
+
+  .menu { /*Setting the font family for the manu section*/
     font-family: 'Forzan', sans-serif;
     padding: 20px;
   }
   
-  .menu h2 {
+  .menu h2 { /*Styling the headings for the menu section*/
     font-size: 36px;
     text-align: center;
     margin-bottom: 20px;
@@ -149,61 +138,58 @@ body {
     text-underline-offset: 20px;
   }
   
-  .menu-grid {
+  .menu-grid { /*Setting up the grid for the menu (was orgionally going to start as a 3 line grid but changes to 4)*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-gap: 50px; */
     margin: 0 10%
   }
   
-  .menu-card {
+  .menu-card { /*Styling the cards that the menu items are on (they a viewable when hovering on)*/
     background-color: transparent;
     padding: 20px;
     text-align: center;
-    /* border: 2px solid #fff; */
     border-radius: 7.5px;
-    /* box-shadow: 0 0 5px #fff; */
     transition: box-shadow 0.3s;
   }
   
-  .menu-card:hover {
+  .menu-card:hover { /*Applying a shadow when hovering over the card*/
     box-shadow: 0 0 10px #fff;
   }
   
-  .menu-card img {
+  .menu-card img { /*Styling the menu images*/
     max-width: 50%;
     height: auto;
     margin-bottom: 10px;
   }
   
-  .menu-card h3 {
+  .menu-card h3 { /*Styling the menu text*/
     font-size: 24px;
     margin: 0 20% 10px 20%;
   }
   
-  .menu-card p {
+  .menu-card p { /*Styling the menu description*/
     font-size: 16px;
     margin: 0px 20% 0px 20%;
     padding-bottom: 10px;
     text-align: justify;
   }
 
-  .price{
+  .price{ /*Setting the price colour*/
     color: salmon;
   }
 
   /* Reservation */
 
- .contact{ /*Creating the contact form section*/
+ .contact{ /*Creating the reservation form section*/
   font-family: 'Forzan', sans-serif;
-    background-image: url(./images/reservation.jpg);
+    background-image: url(./images/reservation.jpg); /*Applying the background image*/
     text-align: center;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-.contact h3{
+.contact h3{ /*Styling the text*/
     color: #000;
     text-align: center;
     font-weight: bold;
@@ -249,7 +235,7 @@ form button{ /*Styling the button to send the form*/
     margin: 20px auto 100px;
     border-radius: 30px;
 }
-form button:hover{ /*Styling the button to send the form*/
+form button:hover{ /*Styling the button to send the form on hover*/
   background: salmon;
 }
 
@@ -309,10 +295,13 @@ footer{ /*Styling the footer*/
   transition: color .4s ease;
 
 }
-.socials a:hover i { /*Added a hover affect to on of the CM colours*/
-  color: #f588a0;
+.socials a:hover i { /*Added a hover affect to the social icons so the user knows its clickable*/
+  color: salmon;
 }
-@media(max-width:1400px){
+
+/*MEDIA QUERIES FOR ADJUTING SIZE ONTO DIFFERNT SCREENS*/
+
+@media(max-width:1400px){ /*Changing the 4 grid layout into a 3*/
   .menu-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -322,7 +311,7 @@ footer{ /*Styling the footer*/
   }
 }
 
-@media(max-width:1200px){
+@media(max-width:1200px){ /*Changing the 3 grid layout into a 2*/
   .menu-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -330,21 +319,18 @@ footer{ /*Styling the footer*/
     margin: 0 10%
   }
 }
-@media(max-width:992px){
-
-}
-@media(max-width:830px){
+@media(max-width:830px){ /*Changing the header so the Kinoko is gone from the top left and the menu andreservation tabs are centered*/
   .brand {
     display: none;
   }
   .header { 
     grid-template-columns: 1fr;
 }
-.container{
+.container{ /*Changing the dishes from a row of 4 to rows of 2*/
   grid-template-columns: 1fr 1fr;
 }
 }
-@media(max-width:700px){
+@media(max-width:700px){ /*Changing the 2 grid layout into a 1 */
   .menu-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -355,30 +341,24 @@ footer{ /*Styling the footer*/
     font-size: 16px;
     margin: 0px 30px 0px 30px;
   }
-  .hero h1 {
+  .hero h1 { /*Resting some margins on smaller screens*/
     margin-left: 0px;
   }
-
   .hero p {
     margin-left: 0px;
   }
 }
-
-@media(max-width: 567px){
+@media(max-width: 567px){ /*Removing the image from the hero content for readabiltiy on smaller screens*/
   .hero {
     grid-template-columns: 1fr;
   }
   .hero img {
     display: none;
   }
-  .hero h1 {
+  .hero h1 { /*Setting some margins for readbiltiy on smaller screens*/
   margin-top: 50px;
   }
   .hero p {
   margin-bottom: 80px;
   }
-}
-
-@media(max-width: 400px){
-
 }
