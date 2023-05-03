@@ -7,7 +7,7 @@ Already knowing one of the best AI assistants ChatGPT I didn’t have to do much
 3.	Please make it so the cards do not come within 10% of the edge of the screen
 
 ### ChatGPT Initall Generation
-1[ChatGPT Initall Generation](./assets/images/chatgpt.PNG)
+![ChatGPT Initall Generation](./assets/images/chatgpt.PNG)
 
 ## Prompts used to initially generate the site
 
