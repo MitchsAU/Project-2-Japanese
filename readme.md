@@ -6,5 +6,8 @@ Already knowing one of the best AI assistants ChatGPT I didn’t have to do much
 2.	Please made the background super black and have the card border as a glowing white 2px
 3.	Please make it so the cards do not come within 10% of the edge of the screen
 
-## Prompts used to iniatlly generate the site
+### ChatGPT Initall Generation
+1[ChatGPT Initall Generation](./assets/images/chatgpt.PNG)
+
+## Prompts used to initially generate the site
 
